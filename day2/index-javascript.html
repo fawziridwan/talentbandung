@@ -1,10 +1,4 @@
-<h1 onclick="setBackground()">Header X</h1>
-
-<style>
-    h1 {
-        color: navy;
-    }
-</style>
+<h1 id="header">Header X</h1>
 
 <script>
 
@@ -22,7 +16,11 @@
         html.style.backgroundColor = color;
     }
 
+    function setColor()    {
+        document.getElementById('header').style.color=randomColor();
+    }
+
 </script>
 
 <button onclick="setBackground(randomColor())">Klik</button>
-<button onclick="randomColor()">Klik Rubah Nama Header</button>
+<button onclick="setColor()">Klik Rubah Nama Header</button>
