@@ -1,0 +1,28 @@
+<h1 onclick="setBackground()">Header X</h1>
+
+<style>
+    h1 {
+        color: navy;
+    }
+</style>
+
+<script>
+
+    function randomColor()  {
+        let n = Math.random() * (16 ** 6 - 1);
+        n = Number(n.toFixed(0));
+        n = n.toString(16);
+        var color = `#${n}`;
+        console.log(color);
+        return color;
+    }
+
+    function setBackground(color)    {
+        var html = document.getElementsByTagName('html')[0];
+        html.style.backgroundColor = color;
+    }
+
+</script>
+
+<button onclick="setBackground(randomColor())">Klik</button>
+<button onclick="randomColor()">Klik Rubah Nama Header</button>
