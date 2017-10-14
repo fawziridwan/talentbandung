@@ -1,0 +1,37 @@
+<h1 id="header">Header X</h1>
+
+<script>
+
+    function randomColor()  {
+        let n = Math.random() * (16 ** 6 - 1);
+        n = Number(n.toFixed(0));
+        n = n.toString(16);
+        var color = `#${n}`;
+        console.log(color);
+        return color;
+    }
+
+    function setBackground(color)    {
+        var html = document.getElementsByTagName('html')[0];
+        html.style.backgroundColor = color;
+    }
+
+    function setColor()    {
+        document.getElementById('header').style.color=randomColor();
+    }
+
+</script>
+    
+<style>
+    button  {
+        background-color: navy;
+        width: 120px;
+        height: 50px;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: yellow; 
+    }
+</style>
+
+<button onclick="setBackground(randomColor())">Klik</button>
+<button onclick="setColor()">Klik Rubah Nama Header</button>
