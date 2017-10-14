@@ -1,12 +1,19 @@
 body {
     background: #f7f5f1;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    color: blue;
+    /* color: blue; */
     /* padding-bottom: 70px; */
 }
 
-.header  {
-    background-image: url(assets/img/img1.png);
+.header {
+    background-image: url(assets/img/bg-header.png);
+    background-size: cover;
+    overflow: hidden;
+    height: 670px;
+}
+
+.video  {
+    background-image: url(assets/img/bg-header.png);
     background-size: cover;
     overflow: hidden;
     height: 670px;
@@ -14,19 +21,19 @@ body {
 
 .overlay    {
     /* background: #311d5e; */
-    background: rgba(49, 29, 94, 0.67);
+    background: rgba(42, 23, 91, 0.789);
     overflow: hidden;
     height: 670px;
 }
 
 .garis  {
-    width: 50px;
+    width: 100px;
     border-color: aqua;
 }
 
-.intro  {
-    padding: 100px;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+.intro, .btn-play  {
+    padding: 50px;
+    /* font-family: 'Roboto', Arial, Helvetica, sans-serif; */
     text-align: center;
     color: white;
     clear: both;
@@ -39,8 +46,8 @@ a {
 
 .logo {
     float: left;
-    width: 120px;
-    margin: 45px;
+    width: 100px;
+    margin: 50px;
     margin-left: 100px;
 }
 
@@ -74,4 +81,67 @@ td {
 
 th {
     border: 0px solid red;
+}
+
+a:hover {
+    color: aqua;
+}
+
+.btn:hover  {
+    border: 1px solid #ffffff;
+    color: white;
+}
+
+.btn {
+    margin-top: 30px;
+    border: 1px solid aqua;
+    display: inline-block;
+    color: aqua;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.btn-play   {
+    float: center;
+    margin: 220px 0;
+    text-transform: uppercase;    
+}
+
+.btn-play:hover a:hover {    
+    color: aqua;
+}
+
+hr  {
+    clear: both;
+}
+
+.story  {
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    overflow: hidden;
+    height: 400px; 
+    text-align: justify;
+    padding: 50px;
+    margin-bottom: 10px;
+}
+
+.image-story {
+    float: left;
+    margin: 110px;
+}
+
+.container  {
+    margin: 100 auto;
+    max-width: 1024px; 
+}
+
+.expertise  {
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    overflow: hidden;
+    height: 400px; 
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 10px;
 }
